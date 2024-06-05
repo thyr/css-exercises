@@ -1,6 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
 .header  {
   font-family: monospace;
   background: papayawhip;
+  margin: 8px;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -9,11 +23,14 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex;
+  gap: 16px;
 }
 
 a {
