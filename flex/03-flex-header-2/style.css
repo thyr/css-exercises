@@ -1,6 +1,12 @@
-/* this is some magical font-importing.  
+/* this is some magical font-importing. 
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+/* RESETS */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
   margin: 0;
@@ -12,6 +18,30 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.flex-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
@@ -25,7 +55,7 @@ body {
 .logo {
   color: rebeccapurple;
   font-size: 32px;
-  font-weight: 900;
+  font-weight: bold;
   font-style: italic;
 }
 
@@ -44,5 +74,11 @@ a {
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
